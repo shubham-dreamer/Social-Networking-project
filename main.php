@@ -36,13 +36,35 @@
         left: 30%;
         transform: translate(-50%,-50%);
     }
+    #signup{
+        width: 60%;
+        border-radius: 30px;
+    }
+    #login{
+        background-color: #fff;
+        color: #1da1f2;
+        border-radius: 30px;
+        border: 1px solid #1da1f2;
+        width: 60%;
+    }
+    #login:hover{
+        width: 60%;
+        
+        background-color: #fff;
+        color: #1da1f2;
+        border-radius: 30px;
+        border: 2px solid #1da1f2;
+    }
+    .well{
+        background-color: #187FAB;
+    }
 
 </style>
 <body>
     <div class="row">
         <div class="col-sm-12">
             <div class="well">
-                <center><h1>Social Networking</h1></center>
+                <center><h1 style="color: white;">Social Networking World</h1></center>
             </div>
         </div>
     </div>
@@ -55,11 +77,21 @@
         </div>
         <div class="col-sm-6" style="left: 8%;">
         <img src="images/logo.png" alt="" class="img-rounded" title="Social Networking" width="80px" height="80px">
-        <h2><strong>See what's happening in the <br> the world right now</strong></h2>
+        <h2><strong>See what's happening in the <br> the world right now</strong></h2><br><br>
         <h4><strong>Join Our Community Today.</strong></h4>
         <form method="post" action="">
             <button id="signup" class="btn btn-info btn-lg" name="signup">Sign Up</button><br><br>
+            <?php
+                if(isset($_POST['signup'])){
+                    echo "<script>window.open('signup.php','_self')</script>";
+                }
+            ?>
             <button id="login" class="btn btn-info btn-lg" name="login">Login</button><br><br>
+            <?php
+                if(isset($_POST['login'])){
+                    echo "<script>window.open('signin.php','_self')</script>";
+                }
+            ?>
         </form>
         </div>
     </div>
