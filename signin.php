@@ -69,7 +69,7 @@
 					<a style="text-decoration: none;float: right;color: #187FAB;" data-toggle="tooltip" title="Create Account!" href="signup.php">Don't have an account?</a><br><br>
 
 					<center><button id="signin" class="btn btn-info btn-lg" name="login">Login</button></center>
-					<!-- <?php //include("login.php"); ?> -->
+					 <?php include("login.php"); ?>
 				</form>
 			</div>
 		</div>
