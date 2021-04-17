@@ -40,14 +40,14 @@ if (!isset($_SESSION['user_email'])) {
         overflow: scroll;
     }
 
-    #green{
-        background-color: #2ecc71 !important;
+    #q{
+        background-color: #2ecc71;
         border-color: #27ae60;
         width: 45%;
         padding: 2.5px;
         font-size: 16px;
         border-radius: 3px;
-        float: left !important;
+        float: left;
         margin-bottom: 5px;
     }
 
@@ -122,14 +122,12 @@ if (!isset($_SESSION['user_email'])) {
                 ?>
 
                     <div id="loaded_msg">
-                        <p><?php if ($user_to == $user_to_msg AND $user_from == $user_from_msg) {
+                        <p><?php if($user_to == $user_to_msg AND $user_from == $user_from_msg) {
                                 echo "<div class='message' id='blue' data-toggle='tooltip' title='$msg_date'>$msg_body
                      </div><br><br><br>";
-                            } else if (
-                                $user_from == $user_to_msg AND $user_to ==
-                                $user_from_msg)
+                } else if($user_from == $user_to_msg AND $user_to ==$user_from_msg)
                              {
-                                echo "<div class='message' id='green' data-toggle='tooltip' title='$msg_date'>$msg_body</div><br><br><br>";
+                                echo "<div class='message' id='q' data-toggle='tooltip' title='$msg_date'>$msg_body</div><br><br><br>";
                             } ?>
                         </p>
                     </div>

@@ -20,6 +20,11 @@ if (!isset($_SESSION['user_email'])) {
     <link rel="stylesheet" type="text/css" href="style/home_style2.css">
 </head>
 <style>
+.row{
+    margin-right: 130px;
+    margin-left: 130px;
+    
+}
 
 </style>
 

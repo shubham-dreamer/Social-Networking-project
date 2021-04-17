@@ -590,7 +590,7 @@ function results(){
 				<div id='posts' class='col-sm-6'>
 					<div class='row'>
 						<div class='col-sm-2'>
-						<p><img src='users/$user_image' class='img-circle' width='100px' height='100px'></p>
+						
 						</div>
 						<div class='col-sm-6'>
 							<h3><a style='text-decoration:none; cursor:pointer;color #3897f0;' href='user_profile.php?u_id=$user_id'>$user_name</a></h3>
